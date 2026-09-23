@@ -3,28 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Mon site Docker</title>
-</head>
-<body>
-    <h1>Bienvenue sur mon site Docker</h1>
 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 32px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        /* Conteneur des images */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* espace entre les images */
+            padding: 20px;
+        }
+
+        /* Style des images */
+        .gallery img {
+            width: 250px;     /* taille réduite */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Bienvenue sur mon site Docker</h1>
     <p>Voici mes images Docker :</p>
 
-    <img src="images/photo1.png" alt="Image 1">
-    <img src="images/photo2.png" alt="Image 2">
-    <img src="images/photo3.png" alt="Image 3">
-    <img src="images/photo4.png" alt="Image 4">
-    <img src="images/photo5.png" alt="Image 5">
-    <img src="images/photo6.png" alt="Image 6">
-    <img src="images/photo7.png" alt="Image 7">
-    <img src="images/photo8.png" alt="Image 8">
-    <img src="images/photo9.png" alt="Image 9">
-    <img src="images/photo10.png" alt="Image 10">
-    <img src="images/photo11.png" alt="Image 11">
-    <img src="images/photo12.png" alt="Image 12">
-    <img src="images/photo13.png" alt="Image 13">
-    <img src="images/photo14.png" alt="Image 14">
-    <img src="images/photo15.png" alt="Image 15">
-    <img src="images/photo16.png" alt="Image 16">
-    <img src="images/photo17.png" alt="Image 17">
+    <div class="gallery">
+        <img src="images/photo1.png" alt="Image 1">
+        <img src="images/photo2.png" alt="Image 2">
+        <img src="images/photo3.png" alt="Image 3">
+        <img src="images/photo4.png" alt="Image 4">
+        <img src="images/photo5.png" alt="Image 5">
+        <img src="images/photo6.png" alt="Image 6">
+        <img src="images/photo7.png" alt="Image 7">
+        <img src="images/photo8.png" alt="Image 8">
+        <img src="images/photo9.png" alt="Image 9">
+        <img src="images/photo10.png" alt="Image 10">
+        <img src="images/photo11.png" alt="Image 11">
+        <img src="images/photo12.png" alt="Image 12">
+        <img src="images/photo13.png" alt="Image 13">
+        <img src="images/photo14.png" alt="Image 14">
+        <img src="images/photo15.png" alt="Image 15">
+        <img src="images/photo16.png" alt="Image 16">
+        <img src="images/photo17.png" alt="Image 17">
+    </div>
+
 </body>
 </html>
